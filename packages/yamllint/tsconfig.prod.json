@@ -1,0 +1,9 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"outDir": "build",
+		"allowJs": false,
+		"noEmit": false
+	},
+	"exclude": ["bin.js"]
+}

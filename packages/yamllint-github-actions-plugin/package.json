@@ -1,0 +1,52 @@
+{
+	"name": "yamllint-github-actions-plugin",
+	"description": "",
+	"version": "0.0.0",
+	"main": "build/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"prepack": "yarn build",
+		"lint": "eslint . --ext js,ts",
+		"lint-fix": "yarn lint --fix",
+		"format": "prettier . --write"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"author": "Mesteery <mestery@pm.me>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mesteery/yamllint.git",
+		"directory": "packages/yamllint-github-actions-plugin"
+	},
+	"homepage": "https://github.com/Mesteery/yamllint/tree/main/packages/yamllint-github-actions-plugin#readme",
+	"bugs": {
+		"url": "https://github.com/Mesteery/yamllint/issues"
+	},
+	"devDependencies": {
+		"@types/node": "^16.7.10",
+		"typescript": "^4.4.2",
+		"yamllint": "0.0.0"
+	},
+	"peerDependencies": {
+		"yamllint": "0.0.0"
+	},
+	"files": [
+		"build"
+	],
+	"keywords": [
+		"yamllint",
+		"yaml",
+		"yml",
+		"lint",
+		"linter",
+		"plugin",
+		"github actions",
+		"github-actions"
+	],
+	"volta": {
+		"node": "16.8.0"
+	}
+}
